@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Code of Part 1
+                let buttons = document.querySelectorAll('.quiz-button'); // Select all answer options
+                let answer_1 = document.querySelector('#answer-1'); // Select the correct answer
+
+                // Loop through all answer options
+                for (button of buttons) {
+                    // If any of the buttons are clicked
+                    button.addEventListener('click', function() {
+                        if (event.target === answer_1) {
+                            event.target.style.backgroundColor = 'green';
+                            event.target.style.color = 'white';
+                        }
+                        else {
+                            event.target.style.backgroundColor = 'red';
+                            answer_1.style.backgroundColor = 'green';
+                            event.target.style.color = 'white';
+                            answer_1.style.color = 'white';
+                        }
+                    })
+                }
+
+                // Code of Part 2
+                let answer_box = document.querySelector('#answer-2'); // Select the answer box
+                let check_button = document.querySelector('#check-button'); // Select the check button
+                let answer_2 = "robert francis kennedy"; // Set the correct answer for the question
+
+                // If "Check Answer" button is clicked
+                check_button.addEventListener('click', function() {
+                    if (answer_box.value.toLowerCase() === answer_2) {
+                        check_button.textContent = "Correct";
+                        check_button.style.backgroundColor = "green";
+                        check_button.style.color = "white";
+                    }
+                    else {
+                        check_button.textContent = "Wrong";
+                        check_button.style.backgroundColor = "red";
+                        check_button.style.color = "white";
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>Which Brazilian city was the capital of Brazil before Brasília?</h3>
+                <section>
+                    <button class="quiz-button">São Paulo</button>
+                    <button class="quiz-button">Salvador</button>
+                    <button class="quiz-button" id="answer-1">Rio de Janeiro</button>
+                    <button class="quiz-button">Belo Horizonte</button>
+                    <button class="quiz-button">Florianópolis</button>
+                </section>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What was the full name of JFK's brother who was assassinated?</h3>
+                <form>
+                    <input autocomplete="off" id="answer-2" name="answer" type="text">
+                    <button id="check-button">Check answer</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

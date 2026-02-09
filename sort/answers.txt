@@ -1,0 +1,12 @@
+sort1 uses: Bubble Sort (reversed5000 - 0.082s, reversed10000 - 0.267s, reversed50000 - 5.767s, random5000 - 0.053s, random10000 - 0.216s, random50000 - 6.278s, sorted5000 - 0.020s, sorted10000 - 0.062s, sorted50000 - 1.283s)
+
+How do you know?: It uses Bubble, since sorted10000 took significantly less time than random10000 and reversed10000,
+that's because it went through the list once, as it was already sorted.
+
+sort2 uses: Merge Sort (reversed5000 - 0.022s, reversed10000 - 0.046s, reversed50000 - 2.538s, random5000 - 0.022s, random10000 - 0.055s, random50000 - 1.178s, sorted5000 - 0m0.021s, sorted10000 - 0.086s, sorted50000 - 1.242s)
+
+How do you know?: It uses Merge Sort, since it is the fastest one with longer lists and the one with the most consistent run times.
+
+sort3 uses: Selection Sort (reversed5000 - 0.050s, reversed10000 - 0.133s, reversed50000 - 3.268s, random5000 - 0.040s, random10000 - 0.141s, random50000 - 2.955s, sorted5000 - 0.043s, sorted10000 - 0.117s, sorted50000 - 3.009s)
+
+How do you know?: It uses Selection Sort, because it has the most equal run times with the same size lists.

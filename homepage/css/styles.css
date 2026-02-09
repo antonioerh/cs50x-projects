@@ -1,0 +1,85 @@
+body {
+    background-color: #1D1D20;
+}
+
+.main h1 {
+    color: #E2E8F0;
+    font-size: 60px;
+}
+
+h1.h1-specific {
+    padding-left: 20px;
+}
+
+.main h6 {
+    color: orange;
+    margin-bottom: -15px;
+}
+
+.main h2 {
+    color: #9CA3AF;
+}
+
+section h6 {
+    padding-left: 200px;
+}
+
+section {
+    width: 800px;
+    color: #E2E8F0;
+}
+
+p#text-about {
+    color: #E2E8F0;
+    width: 800px;
+}
+
+.nav-link {
+    color: #E2E8F0 !important;
+}
+
+.nav-link:hover {
+    color: orange !important;
+    cursor: pointer;
+}
+
+.card {
+    --bs-card-bg: #2A2A2F;
+    margin: 20px 20px;
+    width: 10rem;
+    height: 14rem;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.card-title {
+    color: #E2E8F0 !important;
+    text-align: center;
+}
+
+.card.contact:hover {
+    --bs-card-bg: #CBD5E1;
+}
+
+.card.contact:hover .card-title {
+    color: black !important;
+}
+
+@media only screen and (min-width: 320px) {
+    div.main {
+        padding-left: 80px;
+        padding-top: 80px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    div.main {
+        padding-left: 180px;
+        padding-top: 180px;
+    }
+}

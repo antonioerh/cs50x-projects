@@ -1,0 +1,8 @@
+10 HTML tags I used:
+ul, li, a, p, h6, h1, h2, div, img, h5
+
+5 CSS properties I used:
+background-color, color, font-size, width, cursor
+
+Description of how I chose to use JavaScript and Bootstrap:
+I used JavaScript to play an audio whenever a page of my website loads and Bootstrap to create the pages menu items.

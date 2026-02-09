@@ -1,0 +1,7 @@
+1. We could describe a listener’s audio aura by averaging their energy, valence, and danceability.
+High energy means they like intense or powerful songs, high valence means they enjoy happy and positive music,
+and high danceability shows a preference for rhythmic and danceable songs.
+
+2. This method is not perfect because it only uses three numeric values and does not consider lyrics, mood,
+personal meaning, or specific favorite songs. People also listen to different types of music depending on how they feel.
+A better method could include more attributes, categories, or even a mood-based classification.
