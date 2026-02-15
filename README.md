@@ -39,24 +39,24 @@ This repository contains the projects developed during Harvard University's CS50
 1. Make sure you have Python 3 installed.
 
 2. Clone this repository and navigate into the project folder.
-3. 
-4. Create and activate a virtual environment:
+   
+3. Create and activate a virtual environment:
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    ```
    
-5. Install dependencies:
+4. Install dependencies:
    ```bash
    pip install -r ../requirements.txt
    ```
    
-6. Run the development server:
+5. Run the development server:
    ```bash
    flask run
    ```
    
-7. Open your browser and go to:
+6. Open your browser and go to:
    ```bash
    http://127.0.0.1:5000
    ```
