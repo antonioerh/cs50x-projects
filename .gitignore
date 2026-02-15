@@ -1,7 +1,5 @@
-venv/
-__pycache__/
-# Created by https://www.toptal.com/developers/gitignore/api/django,python,c
-# Edit at https://www.toptal.com/developers/gitignore?templates=django,python,c
+# Created by https://www.toptal.com/developers/gitignore/api/python,c,flask
+# Edit at https://www.toptal.com/developers/gitignore?templates=python,c,flask
 
 ### C ###
 # Prerequisites
@@ -57,22 +55,15 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-### Django ###
-*.log
-*.pot
-*.pyc
-__pycache__/
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
-media
+### Flask ###
+instance/*
+!instance/.gitignore
+.webassets-cache
+.env
 
-# If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
-# in your Git repository. Update and uncomment the following line accordingly.
-# <django-project-name>/staticfiles/
-
-### Django.Python Stack ###
+### Flask.Python Stack ###
 # Byte-compiled / optimized / DLL files
+__pycache__/
 *.py[cod]
 *$py.class
 
@@ -125,12 +116,16 @@ cover/
 
 # Translations
 *.mo
+*.pot
 
 # Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
 
 # Flask stuff:
 instance/
-.webassets-cache
 
 # Scrapy stuff:
 .scrapy
@@ -187,7 +182,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -318,4 +312,4 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# End of https://www.toptal.com/developers/gitignore/api/django,python,c
+# End of https://www.toptal.com/developers/gitignore/api/python,c,flask
