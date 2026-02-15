@@ -29,7 +29,7 @@ This repository contains the projects developed during Harvard University's CS50
 ### Python Programs
 1. Make sure you have Python 3 installed.
 
-2. Clone this repository and navigate into the project folder.
+2. Clone this repository and navigate to the project folder.
 
 3. Run the program:
    ```bash
