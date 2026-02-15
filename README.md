@@ -39,7 +39,7 @@ This repository contains the projects developed during Harvard University's CS50
 ### Flask Programs
 1. Make sure you have Python 3 installed.
 
-2. Clone this repository and navigate into the project folder.
+2. Clone this repository and navigate to the project folder.
    
 3. Create and activate a virtual environment:
    ```bash
@@ -47,7 +47,7 @@ This repository contains the projects developed during Harvard University's CS50
    source venv/bin/activate
    ```
    
-4. Install dependencies:
+4. Install the dependencies:
    ```bash
    pip install -r ../requirements.txt
    ```
