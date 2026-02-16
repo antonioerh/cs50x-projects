@@ -4,7 +4,7 @@ A collection of programming projects developed during [CS50x: Introduction to Co
 ## Description
 This repository contains the projects developed during Harvard University's CS50x: Introduction to Computer Science. The projects cover core computer science concepts, including algorithms, data structures, memory management, and web development, using languages such as C and Python.
 
-**Note: Some C programs rely on the CS50 Library, which is provided in the CS50 development environment and not externally.**
+**Note:** Some C programs rely on the CS50 Library, which is provided in the CS50 development environment and is not available by default on other systems. If so, they will not run properly.
 
 ## Technologies Used Across Projects
 - ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
@@ -25,6 +25,30 @@ This repository contains the projects developed during Harvard University's CS50
 
 ## How to Run
 > The following commands assume a Unix-like environment (Bash).
+
+### C Programs
+**Note:** Some C programs rely on the CS50 Library (`cs50.h`). These programs require either the CS50 development environment or a manual installation of the library to run properly.
+
+1. Make sure you have a C compiler installed (e.g., gcc)
+
+2. Install the CS50 Library, if the program requires it.
+   (Ubuntu guide — Installation instructions for other systems are available [here](https://cs50.readthedocs.io/libraries/cs50/c/)):
+   ```bash
+   curl -s https://packagecloud.io/install/repositories/cs50/repo/script.deb.sh | sudo bash
+   sudo apt install libcs50
+   ```
+
+4. Clone this repository and navigate to the project folder.
+
+5. Compile the C program:
+   ```bash
+   gcc program_name.c -lcs50 -o program_name
+   ```
+   
+6. Run the C program:
+  ```bash
+  ./program_name
+  ```
 
 ### Python Programs
 1. Make sure you have Python 3 installed.
