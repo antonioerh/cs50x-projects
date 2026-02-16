@@ -29,7 +29,7 @@ This repository contains the projects developed during Harvard University's CS50
 ### C Programs
 **Note:** Some C programs rely on the CS50 Library (`cs50.h`). These programs require either the CS50 development environment or a manual installation of the library to run properly.
 
-1. Make sure you have a C compiler installed (e.g., gcc)
+1. Make sure you have a C compiler installed (e.g., gcc).
 
 2. Install the CS50 Library, if the program requires it.
    (Ubuntu guide — Installation instructions for other systems are available [here](https://cs50.readthedocs.io/libraries/cs50/c/)):
