@@ -38,14 +38,19 @@ This repository contains the projects developed during Harvard University's CS50
    sudo apt install libcs50
    ```
 
-4. Clone this repository and navigate to the project folder.
+3. Clone this repository and navigate to the project folder.
 
-5. Compile the C program:
+4. Compile the C program:
    ```bash
+   # Run this if the program uses the CS50 Library
    gcc program_name.c -lcs50 -o program_name
    ```
+   ```bash
+   # Run this if the program doesn't use the CS50 Library
+   gcc program_name.c -o program_name
+   ```
    
-6. Run the C program:
+5. Run the C program:
    ```bash
    ./program_name
    ```
