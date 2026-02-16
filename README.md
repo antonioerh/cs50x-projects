@@ -46,9 +46,9 @@ This repository contains the projects developed during Harvard University's CS50
    ```
    
 6. Run the C program:
-  ```bash
-  ./program_name
-  ```
+   ```bash
+   ./program_name
+   ```
 
 ### Python Programs
 1. Make sure you have Python 3 installed.
