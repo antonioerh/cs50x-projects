@@ -2,7 +2,7 @@
 A collection of programming projects I developed during [CS50x: Introduction to Computer Science](https://www.edx.org/learn/computer-science/harvard-university-cs50-s-introduction-to-computer-science)
 
 ## Description
-This repository contains the projects developed during Harvard University's CS50x: Introduction to Computer Science. The projects cover core computer science concepts, including algorithms, data structures, memory management, and web development, using languages such as C and Python.
+This repository contains the projects I developed during Harvard University's CS50x: Introduction to Computer Science. The projects cover core computer science concepts, including algorithms, data structures, memory management, and web development, using languages such as C and Python.
 
 **Note:** Some C programs rely on the CS50 Library, which is provided in the CS50 development environment and is not available by default on other systems. If so, they will not run properly.
 
