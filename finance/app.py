@@ -22,9 +22,6 @@ Session(app)
 os.makedirs(app.instance_path, exist_ok=True)
 db_path = os.path.join(app.instance_path, "database.db")
 
-# Configure SQLite3 to access database
-db = SQL(f"sqlite:///{db_path}")
-
 # Create database tables
 def init_db():
     with sqlite3.connect(db_path) as conn:
@@ -35,6 +32,8 @@ def init_db():
 if not os.path.exists(db_path):
     init_db()
 
+# Configure SQLite3 to access database
+db = SQL(f"sqlite:///{db_path}")
 
 @app.after_request
 def after_request(response):
