@@ -1,11 +1,10 @@
 import os
-
 from cs50 import SQL
 from flask import Flask, flash, redirect, render_template, request, session
 from flask_session import Session
 from werkzeug.security import check_password_hash, generate_password_hash
 import datetime
-
+import sqlite3
 from helpers import apology, login_required, lookup, usd
 
 # Configure application
@@ -19,8 +18,22 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-# Configure CS50 Library to use SQLite database
-db = SQL("sqlite:///finance.db")
+# Create database path
+os.makedirs(app.instance_path, exist_ok=True)
+db_path = os.path.join(app.instance_path, "database.db")
+
+# Configure SQLite3 to access database
+db = SQL(f"sqlite:///{db_path}")
+
+# Create database tables
+def init_db():
+    with sqlite3.connect(db_path) as conn:
+        with open("schema.sql") as f:
+            conn.executescript(f.read())
+
+# Check if database exists already
+if not os.path.exists(db_path):
+    init_db()
 
 
 @app.after_request
